@@ -16,7 +16,7 @@
     "R":
     {
       "type": "gregtechmod:ore_dict",
-      "ores": [ "ingotAluminium", "ingotInvar", "plateAluminium", "plateInvar" ]
+      "ores": [ "ingotAluminium", "ingotAluminum", "ingotInvar", "plateAluminium", "plateInvar" ]
     },
     "F":
     {

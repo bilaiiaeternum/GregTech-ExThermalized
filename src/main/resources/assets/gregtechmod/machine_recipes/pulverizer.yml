@@ -445,7 +445,8 @@
     - item: ic2:dust#gold
   overwrite: true
 - input:
-    ore: ingotAluminium
+    item: thermalfoundation:material
+    meta: 132
   output:
     - item: gregtechmod:dust_aluminium
 - input:
