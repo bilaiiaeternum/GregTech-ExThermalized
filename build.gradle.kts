@@ -1,10 +1,4 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ConfigureShadowRelocation
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-import com.matthewprenger.cursegradle.CurseProject
-import com.matthewprenger.cursegradle.CurseArtifact
-import com.matthewprenger.cursegradle.CurseRelation
-import fr.brouillard.oss.jgitver.GitVersionCalculator
-import fr.brouillard.oss.jgitver.Strategies
 import net.minecraftforge.gradle.common.util.RunConfig
 import wtf.gofancy.fancygradle.script.extensions.curse
 import wtf.gofancy.fancygradle.script.extensions.deobf
@@ -22,15 +16,9 @@ plugins {
     id("net.minecraftforge.gradle") version "5.1.+"
     id("com.github.johnrengelman.shadow") version "7.0.0"
     id("wtf.gofancy.fancygradle") version "1.1.+"
-    id("com.matthewprenger.cursegradle") version "1.4.+"
-    id("com.modrinth.minotaur") version "2.+"
-    id("wtf.gofancy.git-changelog") version "1.1.+"
 }
 
 val versionMc: String by project
-val curseForgeId: String by project
-val modrinthId: String by project
-val modrinthVersionIC2: String by project
 val versionIC2: String by project
 val versionBuildCraft: String by project
 val versionJEI: String by project
@@ -49,7 +37,6 @@ val versionThaumcraft: String by project
 val versionCraftTweaker: String by project
 
 group = "mods.su5ed"
-version = getGitVersion()
 setProperty("archivesBaseName", "gregtechmod")
 
 val api: SourceSet by sourceSets.creating
@@ -69,7 +56,6 @@ val manifestAttributes = mapOf(
     "Implementation-Timestamp" to LocalDateTime.now()
 )
 val publishReleaseType = System.getenv("PUBLISH_RELEASE_TYPE") ?: "beta"
-val changelogText = changelog.generateChangelog(1, true)
 
 minecraft {
     mappings("stable", "39-1.12")
@@ -139,11 +125,6 @@ val apiJar by tasks.registering(Jar::class) {
     archiveClassifier.set("api")
 }
 
-val relocateShadowJar by tasks.registering(ConfigureShadowRelocation::class) {
-    target = tasks.shadowJar.get()
-    prefix = "mods.gregtechmod.repack"
-}
-
 tasks {
     jar {
         from(api.output)
@@ -154,7 +135,6 @@ tasks {
     }
 
     shadowJar {
-        dependsOn(relocateShadowJar)
         finalizedBy("reobfShadowJar")
 
         configurations = listOf(shade)
@@ -242,83 +222,6 @@ dependencies {
 afterEvaluate {
     val component = components["java"] as AdhocComponentWithVariants
     component.withVariantsFromConfiguration(configurations.runtimeElements.get(), ConfigurationVariantDetails::skip)
-}
-
-curseforge {
-    apiKey = System.getenv("CURSEFORGE_TOKEN") ?: "UNKNOWN"
-    project(closureOf<CurseProject> {
-        id = curseForgeId
-        changelogType = "markdown"
-        changelog = changelogText
-        releaseType = publishReleaseType
-        mainArtifact(tasks.shadowJar.get(), closureOf<CurseArtifact> {
-            displayName = "GregTech Experimental ${project.version}"
-            relations(closureOf<CurseRelation> {
-                requiredDependency("industrial-craft")
-                
-                optionalDependency("jei")
-                optionalDependency("thermal-expansion")
-                optionalDependency("buildcraft")
-                optionalDependency("energy-control")
-                optionalDependency("railcraft")
-                optionalDependency("applied-energistics-2")
-                optionalDependency("thaumcraft")
-                optionalDependency("tinkers-construct")
-                optionalDependency("crafttweaker")
-            })
-        })
-        addGameVersion("Forge")
-        addGameVersion(versionMc)
-    })
-}
-
-modrinth {
-    token.set(System.getenv("MODRINTH_TOKEN"))
-    projectId.set(modrinthId)
-    versionName.set("GregTech Experimental ${project.version}")
-    versionType.set(publishReleaseType)
-    uploadFile.set(tasks.shadowJar.get())
-    gameVersions.addAll(versionMc)
-    dependencies {
-        required.version("wTncj5gs", modrinthVersionIC2) // IC2
-        optional.project("u6dRKJwZ") // JEI
-        optional.project("rxIIYO6c") // Tinkers' Construct
-    }
-    changelog.set(changelogText)
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            groupId = project.group as String
-            artifactId = "gregtechmod"
-            version = project.version as String             
-            
-            from(components["java"])
-            
-            artifact(devJar)
-            artifact(apiJar)
-        }
-    }
-    
-    repositories {
-        maven {
-            credentials {
-                username = project.findProperty("MAVEN_USER") as String?
-                password = project.findProperty("MAVEN_TOKEN") as String?
-            }
-            name = "Su5eD"
-            url = uri("https://maven.su5ed.dev/releases")
-        }
-    }
-}
-
-fun getGitVersion(): String {
-    val jgitver = GitVersionCalculator.location(rootDir)
-        .setNonQualifierBranches("forge-1.12.2")
-        .setStrategy(Strategies.SCRIPT)
-        .setScript("print \"\${metadata.CURRENT_VERSION_MAJOR};\${metadata.CURRENT_VERSION_MINOR};\${metadata.CURRENT_VERSION_PATCH + metadata.COMMIT_DISTANCE}\"")
-    return jgitver.version
 }
 
 // Adapted from https://gist.github.com/pupnewfster/6c21401789ca6d74f9892be8c1c505c9

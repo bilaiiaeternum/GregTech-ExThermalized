@@ -12,4 +12,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "GregTech-Experimental"
+rootProject.name = "GregTech-ExThermalized"
