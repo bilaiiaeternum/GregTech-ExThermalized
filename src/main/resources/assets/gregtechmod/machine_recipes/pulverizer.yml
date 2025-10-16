@@ -64,7 +64,8 @@
   output:
     - item: gregtechmod:dust_sodalite
       count: 12
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
 - input:
     ore: oreRedstone
   output:
@@ -262,7 +263,8 @@
       - oreAluminium
       - oreAluminum
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - item: gregtechmod:dust_titanium
   overwrite: true
@@ -312,7 +314,8 @@
   output:
     - item: gregtechmod:dust_bauxite
       count: 4
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
   overwrite: true
 - input:
     ore: oreApatite
@@ -448,7 +451,8 @@
     item: thermalfoundation:material
     meta: 132
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
 - input:
     ore: ingotTitanium
   output:
@@ -599,7 +603,8 @@
       - itemAluminium
       - aluminium
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
 - input:
     ores:
       - itemSaltpeter
@@ -739,7 +744,8 @@
 - input:
     item: gregtechmod:hull_aluminium
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 6
 - input:
     item: gregtechmod:hull_bronze

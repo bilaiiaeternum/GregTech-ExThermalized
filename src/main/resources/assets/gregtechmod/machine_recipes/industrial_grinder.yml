@@ -31,7 +31,8 @@
   output:
     - item: gregtechmod:dust_sodalite
       count: 12
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 3
 - input:
     ore: oreRedstone
@@ -399,7 +400,8 @@
       - oreAluminum
   fluid: water
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 3
     - item: gregtechmod:smalldust_titanium
 - input:
@@ -418,7 +420,8 @@
   output:
     - item: gregtechmod:dust_titanium
       count: 2
-    - item: gregtechmod:smalldust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
 - input:
     ores:
@@ -455,7 +458,8 @@
   output:
     - item: gregtechmod:dust_bauxite
       count: 4
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
 - input:
     ore: oreApatite
   fluid: water

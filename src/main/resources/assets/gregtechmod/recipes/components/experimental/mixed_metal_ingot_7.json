@@ -21,7 +21,7 @@
     "Z":
     {
       "type": "gregtechmod:ore_dict",
-      "ores": [ "plateTin", "plateZinc", "plateAluminium" ]
+      "ores": [ "plateTin", "plateZinc", "plateAluminium", "plateAluminum" ]
     }
   },
   "result":

@@ -20,9 +20,8 @@
   heat: 1500
   duration: 1000
 - input:
-    - ores:
-        - dustAluminium
-        - dustAluminum
+    - item: thermalfoundation:material
+      meta: 68
   output:
     - item: thermalfoundation:material
       meta: 132

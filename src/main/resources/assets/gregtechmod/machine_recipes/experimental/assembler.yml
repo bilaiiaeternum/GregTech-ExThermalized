@@ -11,7 +11,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
       count: 5
     - ores:
         - chestWood
@@ -23,7 +23,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: ic2:te#pump
   output:
     item: gregtechmod:pump_module
@@ -32,7 +32,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: minecraft:heavy_weighted_pressure_plate
   output:
     item: gregtechmod:item_meter
@@ -41,7 +41,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: minecraft:light_weighted_pressure_plate
   output:
     item: gregtechmod:liquid_meter
@@ -50,7 +50,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: ic2:meter
   output:
     item: gregtechmod:energy_meter
@@ -59,7 +59,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
       count: 2
     - item: minecraft:iron_bars
       count: 2
@@ -77,7 +77,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: minecraft:lever
   output:
     item: gregtechmod:machine_controller
@@ -86,7 +86,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: minecraft:crafting_table
   output:
     item: gregtechmod:crafting
@@ -95,7 +95,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: ic2:energy_crystal
   output:
     item: gregtechmod:energy_crystal
@@ -104,7 +104,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: ic2:lapotron_crystal
   output:
     item: gregtechmod:lapotron_crystal
@@ -113,7 +113,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - item: gregtechmod:lapotronic_energy_orb
   output:
     item: gregtechmod:energy_orb
@@ -131,7 +131,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - ore: plateElectrum
       count: 2
   output:
@@ -142,7 +142,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - ore: plateIridium
   output:
     item: gregtechmod:machine_lock
@@ -151,7 +151,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - ore: dustRedstone
   output:
     item: gregtechmod:redstone_conductor
@@ -160,7 +160,7 @@
 - input:
     - ores:
         - plateIron
-        - plateAluminium
+        - plateAlumium
     - ore: craftingRedstoneTorch
   output:
     item: gregtechmod:redstone_signalizer

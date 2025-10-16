@@ -11,7 +11,7 @@
     "R":
     {
       "type": "forge:ore_dict",
-      "ore": "plateAluminium"
+      "ore": [ "plateAluminium", "plateAluminum" ]
     },
     "W":
     {

@@ -11,7 +11,7 @@
     "P":
     {
       "type": "gregtechmod:ore_dict",
-      "ores": [ "plateIron", "plateAluminium" ]
+      "ores": [ "plateIron", "plateAluminium, plateAluminum" ]
     },
     "A":
     {

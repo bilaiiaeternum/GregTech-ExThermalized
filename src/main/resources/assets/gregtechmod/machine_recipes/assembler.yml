@@ -191,7 +191,8 @@
   energyCost: 16
 - input:
     - ore: lithiumBattery
-    - ore: plateAluminium
+    - item: thermalfoundation:material
+      meta: 324
       count: 4
   output:
     item: gregtechmod:lithium_battery
@@ -381,7 +382,8 @@
   duration: 3200
   energyCost: 4
 - input:
-    - ore: plateAluminium
+    - item: thermalfoundation:material
+      meta: 325
       count: 2
     - item: ic2:crafting#circuit
   output:
@@ -390,7 +392,8 @@
   duration: 800
   energyCost: 16
 - input:
-    - ore: plateAluminium
+    - item: thermalfoundation:material
+      meta 324
       count: 6
     - item: gregtechmod:machine_parts
   output:
@@ -399,7 +402,8 @@
   energyCost: 8
 - input:
     - item: ic2:te#generator
-    - ore: plateAluminium
+    - item: thermalfoundation:material
+      meta: 324
       count: 4
   output:
     item: ic2:te#water_generator

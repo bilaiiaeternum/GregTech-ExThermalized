@@ -45,7 +45,8 @@
     - cell: lithium
     - cell: silicon
       count: 2
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - cell: sodium
       count: 2
@@ -58,7 +59,8 @@
   output:
     - item: gregtechmod:dust_magnesium
       count: 3
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - cell: silicon
       count: 3
@@ -73,7 +75,8 @@
   output:
     - item: ic2:dust#iron
       count: 3
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - cell: silicon
       count: 3
@@ -86,7 +89,8 @@
     ore: dustSpessartine
     count: 20
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - item: gregtechmod:dust_manganese
       count: 3
@@ -204,7 +208,8 @@
     ore: dustEmerald
     count: 29
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - cell: berylium
       count: 3
@@ -219,7 +224,8 @@
     ore: dustRuby
     count: 9
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - item: gregtechmod:dust_chrome
     - cell: ic2air
@@ -231,7 +237,8 @@
     ore: dustSapphire
     count: 8
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 2
     - cell: ic2air
       count: 3
@@ -271,7 +278,8 @@
     ore: dustLazurite
     count: 29
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 3
     - cell: silicon
       count: 3
@@ -310,7 +318,8 @@
   output:
     - cell: sodium
       count: 4
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 3
     - cell: silicon
       count: 3
@@ -331,7 +340,8 @@
     ore: dustBauxite
     count: 12
   output:
-    - item: gregtechmod:dust_aluminium
+    - item: thermalfoundation:material
+      meta: 68
       count: 8
     - item: gregtechmod:smalldust_titanium
       count: 2
