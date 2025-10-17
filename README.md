@@ -1,5 +1,5 @@
 # This is a fork from [su5ed](https://github.com/Su5eD)'s project [GregTech Experimental](https://github.com/Su5eD/GregTech-Experimental)
-# Now GregTech ExThermalized uses thermal resources (I've had problems with unification in my [Natsukashii](https://www.curseforge.com/minecraft/modpacks/natsukashii) modpack.)
+# Now GregTech ExThermalized uses thermal resources (I've had problems with unification in my modpack [Natsukashii](https://www.curseforge.com/minecraft/modpacks/natsukashii).)
 
 it is not a serious project, only a workaround.
 
