@@ -87,7 +87,7 @@ public class ModCompat {
         GregTechMod.LOGGER.info("Adding Rolling Machine recipes");
 
         ItemStack railStandard = ModHandler.getRCItem("rail");
-        addRollingMachineRecipe("rail_standard", ItemHandlerHelper.copyStackWithSize(railStandard, 4), "X X", "X X", "X X", 'X', "ingotAluminium");
+        addRollingMachineRecipe("rail_standard", ItemHandlerHelper.copyStackWithSize(railStandard, 4), "X X", "X X", "X X", 'X', "ingotAluminum");
         addRollingMachineRecipe("rail_standard_2", ItemHandlerHelper.copyStackWithSize(railStandard, 32), "X X", "X X", "X X", 'X', "ingotTitanium");
         addRollingMachineRecipe("rail_standard_3", railStandard, "X X", "X X", "X X", 'X', "ingotTungsten");
 
@@ -96,15 +96,15 @@ public class ModCompat {
         addRollingMachineRecipe("rail_reinforced", railStandard, "X X", "X X", "X X", 'X', "ingotTungstenSteel");
 
         ItemStack rebar = ModHandler.getRCItem("rebar");
-        addRollingMachineRecipe("rebar", ItemHandlerHelper.copyStackWithSize(rebar, 2), "  X", " X ", "X  ", 'X', "ingotAluminium");
+        addRollingMachineRecipe("rebar", ItemHandlerHelper.copyStackWithSize(rebar, 2), "  X", " X ", "X  ", 'X', "ingotAluminum");
         addRollingMachineRecipe("rebar_2", ItemHandlerHelper.copyStackWithSize(rebar, 16), "  X", " X ", "X  ", 'X', "ingotTitanium");
         addRollingMachineRecipe("rebar_3", ItemHandlerHelper.copyStackWithSize(rebar, 16), "  X", " X ", "X  ", 'X', "ingotTungsten");
         addRollingMachineRecipe("rebar_4", ItemHandlerHelper.copyStackWithSize(rebar, 48), "  X", " X ", "X  ", 'X', "ingotTungstenSteel");
 
         ItemStack postMetal = ModHandler.getRCItem("post_metal");
         ItemStack postMetalLightBlue = GtUtil.copyWithMetaSize(postMetal, 8, 3);
-        addRollingMachineRecipe("post_metal_light_blue", postMetalLightBlue, "XXX", " X ", "XXX", 'X', "ingotAluminium");
-        addRollingMachineRecipe("post_metal_light_blue_2", postMetalLightBlue, "X X", "XXX", "X X", 'X', "ingotAluminium");
+        addRollingMachineRecipe("post_metal_light_blue", postMetalLightBlue, "XXX", " X ", "XXX", 'X', "ingotAluminum");
+        addRollingMachineRecipe("post_metal_light_blue_2", postMetalLightBlue, "X X", "XXX", "X X", 'X', "ingotAluminum");
 
         ItemStack postMetalPurple = GtUtil.copyWithMetaSize(postMetal, 64, 10);
         addRollingMachineRecipe("post_metal_purple", postMetalPurple, "XXX", " X ", "XXX", 'X', "ingotTitanium");

@@ -498,7 +498,7 @@ public final class OreDictHandler {
             case "ingotMagnesium":
                 DynamicRecipes.addDustToIngotSmeltingRecipe(name, BlockItems.Dust.MAGNESIUM.getItemStack(), unified);
                 break;
-            case "ingotAluminium":
+            case "ingotAluminum":
             case "ingotTitanium":
             case "ingotChrome":
             case "ingotTungsten":

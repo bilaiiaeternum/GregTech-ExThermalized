@@ -134,7 +134,7 @@ public class CraftingRecipeLoader {
                 );
             });
 
-        ModCompat.addRollingMachineRecipe("coil_kanthal", BlockItems.Component.COIL_KANTHAL.getItemStack(3), "AAA", "BCC", "BBC", 'A', GregTechMod.classic ? "ingotRefinedIron" : "ingotIron", 'B', "ingotChrome", 'C', "ingotAluminium");
+        ModCompat.addRollingMachineRecipe("coil_kanthal", BlockItems.Component.COIL_KANTHAL.getItemStack(3), "AAA", "BCC", "BBC", 'A', GregTechMod.classic ? "ingotRefinedIron" : "ingotIron", 'B', "ingotChrome", 'C', "ingotAluminum");
         ModCompat.addRollingMachineRecipe("coil_nichrome", BlockItems.Component.COIL_NICHROME.getItemStack(), " B ", "BAB", " B ", 'A', "ingotChrome", 'B', "ingotNickel");
         ModCompat.addRollingMachineRecipe("coil_cupronickel", BlockItems.Component.COIL_CUPRONICKEL.getItemStack(), "BAB", "A A", "BAB", 'A', "ingotCopper", 'B', "ingotNickel");
     }
