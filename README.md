@@ -1,3 +1,8 @@
+# This is a fork from su5ed's project GregTech Experimental
+# Now GregTech ExThermalized uses thermal resources (I've had problems with unification in my [Natsukashii](https://www.curseforge.com/minecraft/modpacks/natsukashii) modpack.)
+
+----------
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Su5eD/GregTech-Experimental/forge-1.12.2/src/main/resources/GTE_Logo_medium.png" alt="Logo" align="center"/> 
 </p>
