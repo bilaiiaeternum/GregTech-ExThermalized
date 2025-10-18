@@ -81,7 +81,7 @@ repositories {
 }
 ```
 
-#### Declaring the dependency
+#### Declaring the dependency.
 
 Then, add the dependency to your project:
 ```groovy
